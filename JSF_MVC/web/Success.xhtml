@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+ <h:head>
+        <title>672017081, 672017200, 672017224-Insert</title>
+    </h:head>
+    <h:body>
+        <h:form>
+    <h1>Data Inserted</h1><br></br>
+    <h5>Student:</h5>
+    <h6>Name    : #{obj.name}</h6> 
+    <h6>Roll No : #{obj.rollNo}</h6><br></br><br></br>
+    <h2>#{obj.add()}</h2>
+
+    <h:commandButton id="cmdHome" value="Home" action= "#{obj.home}"/>
+    <h:commandButton id="cmdUpdate" value="Update Data" action="#{obj.update}"/>
+    
+  </h:form>
+    </h:body>
+</html>
